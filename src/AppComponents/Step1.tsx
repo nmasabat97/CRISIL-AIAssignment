@@ -21,7 +21,7 @@ const Step1: React.FC<Step1Props> = ({ data, handleChange, nextStep }) => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white shadow-lg rounded-md">
+    <div className="max-w-xl mx-auto p-6 bg-white">
       <h3 className="text-xl font-bold mb-4">Step 1: Personal Information</h3>
       <input
         type="text"

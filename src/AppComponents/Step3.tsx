@@ -16,7 +16,7 @@ const Step3: React.FC<Step3Props> = ({ data, handleChange }) => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white shadow-lg rounded-md">
+    <div className="max-w-xl mx-auto p-6 bg-white">
       <h3 className="text-xl font-bold mb-4">Step 3: Cover Letter Upload</h3>
       <FileUpload label="Cover Letter" onFileChange={handleFileChange} />
     </div>
