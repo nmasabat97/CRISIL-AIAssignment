@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
-import ProfileIndicator from "../ReusableComponents/ProfileIndicator";
+import Indicator from "../ReusableComponents/Indicator";
 import { useNavigate } from "react-router-dom";
 import OverlayIcon from "./AI/OverlayIcon";
 
@@ -44,7 +44,7 @@ const MultiStepForm: React.FC = () => {
       <div className="max-w-4xl mx-auto p-6">
         <p>Use Case: You are a student applying for internships at companies recommended by your college.</p>
         <p>After the profile is 100% complete, you will be redirected to the video tutorial as basic pre-requisite to join the program, or <p onClick={handleSubmit} className="underline text-purple-500">Jump directly to video tutorial here.</p></p>
-        <ProfileIndicator progress={progress} />
+        <Indicator progress={progress} unhide={true}/>
         <div className="bg-white shadow-lg rounded-md p-6 mt-6">
           {step === 1 && (
             <Step1 data={formData} handleChange={handleChange} nextStep={nextStep} />

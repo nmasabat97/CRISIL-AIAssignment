@@ -1,3 +1,5 @@
+## Author: NIHARIKA MASABATTULA
+
 # College Application Portal
 
 This is a React + TypeScript based college application portal that allows students to:
@@ -35,11 +37,14 @@ Tailwind CSS is used for all styling.
 ---
 
 ## Setup
-- git clone
-- cd 
-- npm i
-- npm start 
-- npm test <nameofComponent>
+- git clone https://github.com/nmasabat97/CRISIL-AIAssignment.git
+- cd CRISIL-AIAssignment
+- npm install
+- npm start (to run in local development)
+- npm test <nameofComponent> (Name of components mentioned in src/tests folder)
+
+## Vercel App for Quick Access to Project
+https://crisil-ai-assignment.vercel.app
 
 ## Project Structure
 

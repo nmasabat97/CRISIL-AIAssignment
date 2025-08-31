@@ -1,10 +1,11 @@
 import React from "react";
 
-interface ProfileIndicatorProps {
+interface IndicatorProps {
   progress: number;
+  unhide: boolean;
 }
 
-const ProfileIndicator: React.FC<ProfileIndicatorProps> = ({ progress }) => {
+const Indicator: React.FC<IndicatorProps> = ({ progress, unhide=true}) => {
   return (
     <div className="w-full p-4">
       <div className="bg-gray-200 rounded-full overflow-hidden">
@@ -13,9 +14,9 @@ const ProfileIndicator: React.FC<ProfileIndicatorProps> = ({ progress }) => {
           style={{ width: `${progress}%` }}
         ></div>
       </div>
-      <p className="text-center text-sm mt-2">{progress}% Complete</p>
+      {unhide && <p className="text-center text-sm mt-2">{progress}% Complete</p>}
     </div>
   );
 };
 
-export default ProfileIndicator;
+export default Indicator;

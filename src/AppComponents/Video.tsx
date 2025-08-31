@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import YouTube from "react-youtube";
+import Indicator from "../ReusableComponents/Indicator";
 
 // Sample Transcript Data (This can come from an API or static data)
 const transcriptData = [
@@ -83,12 +84,7 @@ const VideoTutorial: React.FC = () => {
       {/* Video Progress Section */}
       <div className="mt-6">
         <h2 className="text-xl font-semibold">Video Progress</h2>
-        <div className="w-full bg-gray-300 h-2 rounded-full mt-2">
-          <div
-            className="bg-blue-500 h-full rounded-full"
-            style={{ width: `${progressPercentage}%` }}
-          />
-        </div>
+        <Indicator progress={progressPercentage} unhide={false}/>
         <p className="text-sm mt-2">Progress: {Math.round(progressPercentage)}%</p>
       </div>
 
